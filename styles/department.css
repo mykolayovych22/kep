@@ -1,0 +1,84 @@
+        :root {
+            --primary: #0056b3;
+            --primary-dark: #004099;
+            --secondary: #6c757d;
+            --light: #f8f9fa;
+            --dark: #212529;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: var(--dark);
+            padding-top: 80px;
+        }
+        
+        /* Section Headings */
+        .section-heading {
+            position: relative;
+            margin-bottom: 40px;
+            font-weight: 700;
+            color: var(--primary);
+        }
+        
+
+        
+        /* Cards */
+        .card {
+            border: none;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            height: 100%;
+            margin-bottom: 30px;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+        
+        .card-img-top {
+            border-radius: 12px 12px 0 0;
+            height: 250px;
+            object-fit: cover;
+        }
+        
+        .department-icon {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 15px;
+            display: inline-block;
+        }
+        /* Buttons */
+        .btn-primary {
+            background-color: var(--primary);
+            border-color: var(--primary);
+            padding: 12px 30px;
+            border-radius: 8px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            background-color: var(--primary-dark);
+            border-color: var(--primary-dark);
+            transform: translateY(-2px);
+        }
+        
+        /* Breadcrumb */
+        .breadcrumb {
+            background-color: transparent;
+            padding: 15px 0;
+        }
+        
+        /* Department Section */
+        .departments-section {
+            padding: 60px 0;
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .card-img-top {
+                height: 200px;
+            }
+        }

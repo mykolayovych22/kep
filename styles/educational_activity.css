@@ -1,0 +1,189 @@
+
+
+/* Тепер наші основні стилі тільки для контенту */
+.club-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.club-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.card-content {
+    flex-grow: 1;
+    margin-bottom: 1rem;
+}
+
+.card-button {
+    margin-top: auto;
+    padding: 1rem 0;
+}
+
+.row.g-4 {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2rem 0;
+}
+
+.row.g-4 > .col-md-4 {
+    display: flex;
+    padding: 0.75rem;
+}
+
+.hero-section {
+    background: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)), url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-position: center;
+    color: #333;
+    padding: 6rem 0;
+    text-align: center;
+    border-bottom: 1px solid #e9ecef;
+    margin-bottom: 3rem;
+}
+
+.club-card {
+    transition: transform 0.3s;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+}
+
+.club-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 1.5rem;
+}
+
+.card-content {
+    flex-grow: 1;
+    margin-bottom: 1.5rem;
+}
+
+.card-button {
+    margin-top: auto;
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+.icon-container {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 2rem;
+}
+
+.psychology-section {
+    background-color: #f8f9fa;
+    padding: 4rem 0;
+    margin: 3rem 0;
+}
+
+.esports-games {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    padding: 1rem 0;
+}
+
+.game-badge {
+    background: #6c757d;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    margin: 0.5rem;
+}
+
+.section-title {
+    position: relative;
+    padding-bottom: 1.5rem;
+    margin-bottom: 2.5rem;
+    color: #2c3e50;
+}
+
+.section-title:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background-color: #3498db;
+}
+
+.center-title:after {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Стилі для кнопок, але не в navbar */
+.btn-primary:not(.navbar .btn-primary) {
+    background-color: #3498db;
+    border-color: #3498db;
+    padding: 0.75rem 1.5rem;
+    margin: 0.5rem;
+}
+
+.btn-success:not(.navbar .btn-success) {
+    background-color: #2ecc71;
+    border-color: #2ecc71;
+    padding: 0.75rem 1.5rem;
+    margin: 0.5rem;
+}
+
+.btn-warning:not(.navbar .btn-warning) {
+    background-color: #f39c12;
+    border-color: #f39c12;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    margin: 0.5rem;
+}
+
+/* Контейнери, але не в navbar */
+.container:not(.navbar .container) {
+    padding: 2rem 1rem;
+}
+
+/* Секції, які не є navbar */
+section:not(.navbar) {
+    margin: 2rem 0;
+    padding: 2rem 0;
+}
+
+/* Заголовки та параграфи, але не в navbar */
+:not(.navbar) h1,
+:not(.navbar) h2,
+:not(.navbar) h3,
+:not(.navbar) h4,
+:not(.navbar) h5,
+:not(.navbar) h6 {
+    margin-bottom: 1rem;
+}
+
+:not(.navbar) p {
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}

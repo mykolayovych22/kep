@@ -1,0 +1,121 @@
+:root {
+            --primary: #0056b3;
+            --primary-dark: #004099;
+            --secondary: #6c757d;
+            --light: #f8f9fa;
+            --dark: #212529;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: var(--dark);
+            padding-top: 80px;
+            background-color: #f9f9f9;
+        }
+        
+        /* Page Specific Styles */
+        .page-header {
+            background: linear-gradient(to right, var(--primary), var(--primary-dark));
+            color: white;
+            padding: 3rem 0;
+            margin-bottom: 2rem;
+        }
+        
+        .director-card {
+            border: none;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            margin-bottom: 2rem;
+            overflow: hidden;
+        }
+        
+        .director-header {
+            background: linear-gradient(to right, var(--primary), var(--primary-dark));
+            color: white;
+            padding: 1.5rem;
+        }
+        
+        .director-body {
+            padding: 1.5rem;
+        }
+        
+        .director-name {
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+        
+        .director-position {
+            font-weight: 500;
+            opacity: 0.9;
+            margin-bottom: 0;
+        }
+        
+        .director-contact {
+            background-color: var(--light);
+            padding: 1rem;
+            border-radius: 8px;
+            margin-top: 1.5rem;
+        }
+        
+        .section-heading {
+            position: relative;
+            margin-bottom: 40px;
+            font-weight: 700;
+            color: var(--primary);
+        }
+        
+        .section-heading:after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background: var(--primary);
+            margin-top: 15px;
+            border-radius: 2px;
+        }
+        
+        .timeline {
+            position: relative;
+            padding-left: 2rem;
+            margin: 1.5rem 0;
+        }
+        
+        .timeline:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 3px;
+            background-color: var(--primary);
+            border-radius: 3px;
+        }
+        
+        .timeline-item {
+            position: relative;
+            margin-bottom: 1.5rem;
+        }
+        
+        .timeline-item:before {
+            content: '';
+            position: absolute;
+            left: -2rem;
+            top: 0.5rem;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: var(--primary);
+            border: 3px solid white;
+            box-shadow: 0 0 0 2px var(--primary);
+        }
+        
+        @media (max-width: 768px) {
+            .director-header {
+                padding: 1rem;
+            }
+            
+            .director-body {
+                padding: 1rem;
+            }
+        }

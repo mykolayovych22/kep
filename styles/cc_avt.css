@@ -1,0 +1,441 @@
+        :root {
+            --primary: #0066cc;
+            --primary-dark: #004c99;
+            --secondary: #6c757d;
+            --light: #f8f9fa;
+            --dark: #212529;
+            --accent: #00cc66;
+            --success: #28a745;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: var(--dark);
+            padding-top: 80px;
+            background-color: #f9f9f9;
+            font-size: 1.1rem;
+        }
+
+        .page-header {
+            background: linear-gradient(rgba(0, 102, 204, 0.8), rgba(0, 204, 102, 0.7)), url('https://images.unsplash.com/photo-1535223289827-42f1e9919769?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
+            padding: 100px 0;
+            color: white;
+            text-align: center;
+            margin-bottom: 40px;
+            position: relative;
+        }
+        
+        .page-header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(to bottom, #0066cc 50%, #00cc66 50%);
+            opacity: 0.3;
+            z-index: -1;
+        }
+        
+        .page-header h1 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        
+        .page-header .quote {
+            font-size: 1.4rem;
+            font-style: italic;
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid var(--accent);
+        }
+        
+        .section-container {
+            padding: 80px 0;
+        }
+        
+        .section-heading {
+            position: relative;
+            margin-bottom: 40px;
+            font-weight: 700;
+            color: var(--primary);
+            padding-bottom: 15px;
+            font-size: 2.2rem;
+        }
+        
+        .section-heading:after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background: var(--primary);
+            margin-top: 15px;
+            border-radius: 2px;
+        }
+        
+        .section-heading.center {
+            text-align: center;
+        }
+        
+        .section-heading.center:after {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .card {
+            border: none;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            height: 100%;
+            overflow: hidden;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+        
+        .teacher-card {
+            padding: 35px;
+            margin-bottom: 50px;
+            text-align: center;
+        }
+        
+        .teacher-img-container {
+            margin-bottom: 25px;
+            display: flex;
+            justify-content: center;
+        }
+        
+        .teacher-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid var(--light);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .teacher-name {
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 10px;
+            font-size: 1.6rem;
+        }
+        
+        .teacher-position {
+            color: var(--secondary);
+            margin-bottom: 25px;
+            font-weight: 500;
+            font-size: 1.3rem;
+        }
+        
+        .teacher-info {
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+            display: flex;
+            align-items: flex-start;
+        }
+        
+        .teacher-info i {
+            color: var(--primary);
+            margin-right: 10px;
+            margin-top: 3px;
+            min-width: 20px;
+            text-align: center;
+            flex-shrink: 0;
+        }
+        
+        .teacher-info strong {
+            color: var(--dark);
+            margin-right: 5px;
+        }
+        
+        .teacher-contact {
+            margin-top: 25px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+        
+        .discipline-card {
+            text-align: center;
+            padding: 30px 20px;
+            transition: all 0.3s ease;
+            min-height: 240px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        .discipline-icon {
+            font-size: 3rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+        
+        .discipline-name {
+            font-weight: 600;
+            color: var(--dark);
+            margin-bottom: 10px;
+            font-size: 1.3rem;
+        }
+        
+        .event-card {
+            position: relative;
+            overflow: hidden;
+            border-radius: 12px;
+            margin-bottom: 20px;
+        }
+        
+        .event-img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .event-card:hover .event-img {
+            transform: scale(1.05);
+        }
+        
+        .event-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+            padding: 20px;
+            color: white;
+        }
+        
+        .event-title {
+            font-weight: 600;
+            margin-bottom: 5px;
+            font-size: 1.2rem;
+        }
+        
+        .goals-list {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        
+        .goals-list li {
+            margin-bottom: 15px;
+            padding-left: 35px;
+            position: relative;
+            font-size: 1.15rem;
+            line-height: 1.6;
+        }
+        
+        .goals-list li:before {
+            content: '\f058';
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            color: var(--success);
+            position: absolute;
+            left: 0;
+            top: 3px;
+            font-size: 1.4rem;
+        }
+        
+        .creative-text {
+            font-size: 1.15rem;
+            line-height: 1.7;
+        }
+        
+        .highlight {
+            background-color: rgba(0, 204, 102, 0.2);
+            padding: 2px 5px;
+            border-radius: 3px;
+            font-weight: 600;
+        }
+        
+        .quote-block {
+            border-left: 4px solid var(--primary);
+            padding-left: 20px;
+            margin: 25px 0;
+            font-style: italic;
+            font-size: 1.2rem;
+            background-color: rgba(0, 102, 204, 0.05);
+            padding: 20px;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .icon-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+        
+        .icon-item i {
+            color: var(--primary);
+            font-size: 1.3rem;
+            margin-right: 15px;
+            margin-top: 3px;
+            flex-shrink: 0;
+        }
+        
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            background-color: var(--primary);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+            z-index: 1000;
+            opacity: 0;
+            visibility: hidden;
+        }
+        
+        .back-to-top.active {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .back-to-top:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-3px);
+        }
+        
+        .tech-bg {
+            background: linear-gradient(to bottom, #0066cc 50%, #00cc66 50%);
+            opacity: 0.9;
+        }
+        
+        /* Вирівнювання контенту викладачів */
+        .teacher-content-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        /* Спеціальні класи для вирівнювання */
+        .teacher-info-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 12px;
+            width: 100%;
+        }
+        
+        .teacher-info-content {
+            text-align: left;
+            max-width: 100%;
+        }
+        
+        .teacher-contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+
+/* Фікс для відступів іконок */
+.teacher-info-item i,
+.icon-item i {
+    margin-right: 20px !important;
+    min-width: 24px !important;
+}
+
+.teacher-contact-item i {
+    margin-right: 12px !important;
+}
+
+/* Для мобільних пристроїв */
+@media (max-width: 768px) {
+    .teacher-info-item i,
+    .icon-item i {
+        margin-right: 15px !important;
+        min-width: 20px !important;
+    }
+    
+    .teacher-contact-item i {
+        margin-right: 10px !important;
+    }
+}
+        
+        @media (max-width: 768px) {
+            .page-header {
+                padding: 70px 0;
+            }
+            
+            .page-header h1 {
+                font-size: 2.2rem;
+            }
+            
+            .page-header .quote {
+                font-size: 1.2rem;
+            }
+            
+            .section-heading {
+                font-size: 1.9rem;
+            }
+            
+            .teacher-card {
+                padding: 25px;
+                margin-bottom: 40px;
+            }
+            
+            .teacher-img {
+                width: 160px;
+                height: 160px;
+            }
+            
+            .teacher-name {
+                font-size: 1.5rem;
+            }
+            
+            .teacher-position {
+                font-size: 1.2rem;
+            }
+            
+            .teacher-info {
+                font-size: 1.05rem;
+            }
+            
+            .section-container {
+                padding: 60px 0;
+            }
+            
+            .teacher-info-content {
+                max-width: 95%;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .teacher-img {
+                width: 140px;
+                height: 140px;
+            }
+            
+            .teacher-card {
+                padding: 20px;
+                margin-bottom: 35px;
+            }
+            
+            .goals-list li {
+                font-size: 1.05rem;
+                padding-left: 30px;
+            }
+            
+            .goals-list li:before {
+                font-size: 1.2rem;
+                top: 2px;
+            }
+            
+            .section-container {
+                padding: 50px 0;
+            }
+        }

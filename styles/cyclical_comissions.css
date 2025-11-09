@@ -1,0 +1,222 @@
+        :root {
+            --primary: #0056b3;
+            --primary-dark: #004099;
+            --secondary: #6c757d;
+            --light: #f8f9fa;
+            --dark: #212529;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: var(--dark);
+            padding-top: 80px;
+            background-color: #f9f9f9;
+        }
+        /* Page Header */
+        .page-header {
+            background: linear-gradient(rgba(0, 86, 179, 0.9), rgba(0, 64, 153, 0.9)), url('https://placehold.co/1920x600/007bff/white') center/cover no-repeat;
+            padding: 100px 0;
+            color: white;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .page-header h1 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        
+        .breadcrumb {
+            justify-content: center;
+            background: transparent;
+            margin-bottom: 0;
+        }
+        
+        .breadcrumb-item a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+        }
+        
+        .breadcrumb-item.active {
+            color: white;
+        }
+        
+        /* Commission Styles */
+        .commission-section {
+            margin-bottom: 3rem;
+        }
+        
+        .commission-header {
+            padding: 1.5rem;
+            border-radius: 10px;
+            color: white;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .commission-icon {
+            font-size: 2.5rem;
+            margin-right: 1rem;
+            background-color: rgba(255, 255, 255, 0.2);
+            width: 70px;
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+        }
+        
+        .commission-title {
+            font-weight: 700;
+            margin: 0;
+            flex-grow: 1;
+        }
+        
+        .commission-content {
+            background: white;
+            border-radius: 10px;
+            padding: 1.5rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+        }
+        
+        .commission-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        .commission-list li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            align-items: center;
+        }
+        
+        .commission-list li:last-child {
+            border-bottom: none;
+        }
+        
+        .commission-list i {
+            margin-right: 10px;
+            width: 20px;
+            text-align: center;
+        }
+        
+        .commission-card {
+            border: none;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease;
+            height: 100%;
+        }
+        
+        .commission-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .commission-card .card-img-top {
+            height: 160px;
+            object-fit: cover;
+        }
+        
+        .commission-card .card-body {
+            padding: 1.5rem;
+        }
+        
+        .btn-details {
+            padding: 10px 25px;
+            border-radius: 8px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-details:hover {
+            transform: translateY(-2px);
+        }
+        
+        /* Section Headings */
+        .section-heading {
+            position: relative;
+            margin-bottom: 40px;
+            font-weight: 700;
+            color: var(--primary);
+        }
+        
+        .section-heading:after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background: var(--primary);
+            margin-top: 15px;
+            border-radius: 2px;
+        }
+        /* Color Themes for Commissions */
+        .commission-automation {
+            background-color: #3F51B5;
+        }
+        
+        .commission-electronics {
+            background-color: #009688;
+        }
+        
+        .commission-computer {
+            background-color: #FF5722;
+        }
+        
+        .commission-physics {
+            background-color: #9C27B0;
+        }
+        
+        .commission-business {
+            background-color: #607D8B;
+        }
+        
+        .commission-ukrainian {
+            background-color: #E91E63;
+        }
+        
+        .commission-health {
+            background-color: #4CAF50;
+        }
+        
+        .commission-math {
+            background-color: #FF9800;
+        }
+        
+        .commission-it {
+            background-color: #00BCD4;
+        }
+        
+        .commission-natural {
+            background-color: #8BC34A;
+        }
+        
+        .commission-humanities {
+            background-color: #795548;
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .page-header {
+                padding: 70px 0;
+            }
+            
+            .page-header h1 {
+                font-size: 2.2rem;
+            }
+            
+            .commission-header {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .commission-icon {
+                margin-right: 0;
+                margin-bottom: 1rem;
+            }
+        }
