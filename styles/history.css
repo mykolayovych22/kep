@@ -1,11 +1,9 @@
-/* Breadcrumb */
         .breadcrumb-section {
             background-color: var(--light);
             padding: 15px 0;
             margin-bottom: 40px;
         }
         
-        /* Page Header */
         .page-header {
             background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
             color: white;
@@ -26,7 +24,6 @@
             margin: 0 auto;
         }
         
-        /* Content Sections */
         .content-section {
             padding: 40px 0;
         }
@@ -37,17 +34,6 @@
             padding-bottom: 15px;
             font-weight: 700;
             color: var(--primary);
-        }
-        
-        .section-title:after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 60px;
-            height: 4px;
-            background: var(--primary);
-            border-radius: 2px;
         }
         
         .history-timeline {
