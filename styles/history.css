@@ -76,7 +76,6 @@
             margin-bottom: 10px;
         }
         
-        /* Values Section */
         .values-section {
             background-color: var(--light);
             padding: 60px 0;
@@ -116,7 +115,6 @@
             overflow: hidden;
         }
         
-        /* Responsive */
         @media (max-width: 768px) {
             .page-header {
                 padding: 40px 0;
